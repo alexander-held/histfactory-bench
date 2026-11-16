@@ -1,0 +1,15 @@
+[workspace]
+authors = ["Alexander Held"]
+channels = ["conda-forge"]
+name = "histfactory-bench"
+platforms = ["osx-arm64"]
+version = "0.1.0"
+
+[tasks]
+fetch = "python -I -u fetch.py"
+validate = "python -I -u validate.py"
+
+[dependencies]
+python = ">=3.12"
+pyhf = ">=0.8.0,<0.9"
+requests = ">=2.34.2,<3"
